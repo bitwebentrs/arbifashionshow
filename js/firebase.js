@@ -1,12 +1,12 @@
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyB4VzzWM16W8LiMn62cVHwm-oVrA2jPYgI",
-  authDomain: "afbsax.firebaseapp.com",
-  databaseURL: "https://afbsax-default-rtdb.firebaseio.com",
-  projectId: "afbsax",
-  storageBucket: "afbsax.appspot.com",
-  messagingSenderId: "375095543692",
-  appId: "1:375095543692:web:40f2900addd5b795e9b8a9"
+  apiKey: "AIzaSyBZPRKhmPi2hBKVIyK9kK4jE_VXnwCJCAk",
+  authDomain: "arbifash.firebaseapp.com",
+  databaseURL: "https://arbifash-default-rtdb.firebaseio.com",
+  projectId: "arbifash",
+  storageBucket: "arbifash.firebasestorage.app",
+  messagingSenderId: "1077553793823",
+  appId: "1:1077553793823:web:9108c949858b1440bbbe2a"
 };
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
