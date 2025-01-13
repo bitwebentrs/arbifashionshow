@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="_9dls touch _ar44 js-focus-visible _aa4c" lang="en" dir="ltr" data-js-focus-visible="">
 
@@ -26,58 +27,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
     <title>Arab Fashion Council</title>
     <style>
-.parent-div {
-    position: relative;
-    /* Ensures child elements with absolute positioning stay within this container */
-    width: 100%;
-    /* Adjust as needed */
-    height: auto;
-    /* Adjust as needed */
-    overflow: hidden;
-    /* Prevents overflow of child elements */
-}
-
 .mgm {
     display: none;
-    position: absolute;
-    /* Positions the element relative to the parent */
-    top: 250px;
-    /* Adjust the position within the parent */
-    left: 50%;
-    transform: translateX(-50%);
-    /* Centers it horizontally within the parent */
+    /* Initially hidden */
     background-color: #fff9d7;
     border: 1px solid #e2c822;
     width: 100%;
     max-width: 400px; 
-    /* Set a max width to keep it manageable */
+    /* Set a max width */
     padding: 5px;
     text-align: center;
     border-radius: 5px;
-    /* Optional: Rounded corners */
+    margin: 10px auto;
+    /* Add margin to create space around it */
+    font-family: Arial, sans-serif;
+    font-size: 11px;
 }
 
 .mgm .txt {
-    font-family: Arial, sans-serif;
     display: inline-block;
-    /* Display text inline-block to align with image */
+    /* Display text inline-block to align with any other inline content */
     vertical-align: middle;
-    /* Vertical alignment with image */
-    margin-left: 10px;
-    /* Adjust margin between image and text */
-    font-size: 11px;
+    /* Vertical alignment */
 }
 
 .mgm img {
     display: inline-block;
-    /* Display image inline-block */
     width: 35px;
-    /* Adjust image size as needed */
     height: 35px;
     border-radius: 50%;
-    /* Optional: Rounded image */
     vertical-align: middle;
-    /* Vertical alignment with text */
+    margin-right: 10px;
 }
 
 
@@ -165,21 +145,32 @@
 <body>
     <div id="home">
 
-        <header>
-            <img src="img/slide.png"><br><br>
+<header>
+    <img src="img/slide.png"><br><br>
 
-            <center>
-                <div class="parent-div">
-                    <div class="mgm">
-                     <span class="txt"></span>
-                    </div>
-                </div>
+    <center>
+        <div class="mgm">
+            <span class="txt">This is a sample message.</span>
+        </div><br><br>
 
-                <button id="vote2" onclick="vote()">
-                    Click Here To Vote
-                </button><br><br>
-            </center>
-        </header>
+        <button id="vote2" onclick="toggleMGM()">
+            Click Here To Vote
+        </button><br><br>
+    </center>
+</header>
+<script>
+    function toggleMGM() {
+    const mgm = document.querySelector('.mgm');
+    const voteButton = document.getElementById('vote2');
+    
+    if (mgm.style.display === 'block') {
+        mgm.style.display = 'none';
+    } else {
+        mgm.style.display = 'block';
+    }
+}
+
+</script>
 
         <div id="blue">
 
