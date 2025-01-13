@@ -26,21 +26,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
     <title>Arab Fashion Council</title>
     <style>
-        .mgm {
+.parent-div {
+    position: relative;
+    /* Ensures child elements with absolute positioning stay within this container */
+    width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    /* Adjust as needed */
+    overflow: hidden;
+    /* Prevents overflow of child elements */
+}
+
+.mgm {
     display: none;
-    position: fixed;
-    /* Fixed position ensures it stays in the same spot on the screen */
+    position: absolute;
+    /* Positions the element relative to the parent */
     top: 250px;
-    /* Adjust top position as needed */
+    /* Adjust the position within the parent */
     left: 50%;
-    /* Center horizontally */
     transform: translateX(-50%);
-    /* Adjust for perfect centering */
+    /* Centers it horizontally within the parent */
     background-color: #fff9d7;
     border: 1px solid #e2c822;
     width: 100%;
     max-width: 400px; 
-    /* Set a max width for smaller screens */
+    /* Set a max width to keep it manageable */
     padding: 5px;
     text-align: center;
     border-radius: 5px;
