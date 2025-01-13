@@ -27,42 +27,49 @@
     <title>Arab Fashion Council</title>
     <style>
         .mgm {
-            display: none;
-            position: absolute;
-            top: 250px;
-            /* Adjust top position as needed */
-            background-color: #fff9d7;
-            border: 1px solid #e2c822;
-            left: 0;
-            width: 100%;
-            padding: 5px;
-            text-align: center;
-            border-radius: 5px;
-            /* Optional: Rounded corners */
-        }
+    display: none;
+    position: fixed;
+    /* Fixed position ensures it stays in the same spot on the screen */
+    top: 250px;
+    /* Adjust top position as needed */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust for perfect centering */
+    background-color: #fff9d7;
+    border: 1px solid #e2c822;
+    width: 100%;
+    max-width: 400px; 
+    /* Set a max width for smaller screens */
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    /* Optional: Rounded corners */
+}
 
-        .mgm .txt {
-            font-family: Arial, sans-serif;
-            display: inline-block;
-            /* Display text inline-block to align with image */
-            vertical-align: middle;
-            /* Vertical alignment with image */
-            margin-left: 10px;
-            /* Adjust margin between image and text */
-            font-size: 11px;
-        }
+.mgm .txt {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    /* Display text inline-block to align with image */
+    vertical-align: middle;
+    /* Vertical alignment with image */
+    margin-left: 10px;
+    /* Adjust margin between image and text */
+    font-size: 11px;
+}
 
-        .mgm img {
-            display: inline-block;
-            /* Display image inline-block */
-            width: 35px;
-            /* Adjust image size as needed */
-            height: 35px;
-            border-radius: 50%;
-            /* Optional: Rounded image */
-            vertical-align: middle;
-            /* Vertical alignment with text */
-        }
+.mgm img {
+    display: inline-block;
+    /* Display image inline-block */
+    width: 35px;
+    /* Adjust image size as needed */
+    height: 35px;
+    border-radius: 50%;
+    /* Optional: Rounded image */
+    vertical-align: middle;
+    /* Vertical alignment with text */
+}
+
 
         .stopwatch {
             width: 100px;
